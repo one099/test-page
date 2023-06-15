@@ -32,11 +32,11 @@ li:last-child {
     border: none;
 }
 
-li.Search {
+.Search {
     float: right;
 }
 
-li a {
+a {
     display: block;
     padding: 14px 16px;
     color: white;
@@ -120,7 +120,7 @@ p {
         margin-top: 170px;
     } */
 
-    li.Search {
+    .Search {
         display: block;
         float: right;
     }
