@@ -8,8 +8,8 @@ These components would most probably be the ones I will be using in some of my f
 
 ## Deployment
 
-This is deployed using github pages: [Check It Out!](two048.github.io/test-page)
+This is deployed using github pages: [Check It Out!](http:two048.github.io/test-page)
 
 ## Note
 
-I will be make a list page for this soon, to help in the process of archiving and documentation.
+I will be making a list page for this repo soon - to help with the process of archiving and documentation.
