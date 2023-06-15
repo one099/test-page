@@ -110,8 +110,7 @@ p {
 
 @media screen and (max-width: 480px) {
 
-    li,
-    li.Search {
+    li {
         display: none;
         /* display: block;
         float: none; */
@@ -120,6 +119,11 @@ p {
     /* main {
         margin-top: 170px;
     } */
+
+    li.Search {
+        display: block;
+        float: right;
+    }
 
     li.menu {
         display: block;
