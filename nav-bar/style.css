@@ -34,6 +34,12 @@ li:last-child {
 
 .Search {
     float: right;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #04a5aa;
 }
 
 a {
