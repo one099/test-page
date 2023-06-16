@@ -1,26 +1,41 @@
+/*
+Stripping down some of the default styling
+*/
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-nav {
-    margin-top: 0;
-    padding-top: 0;
-}
+/*
+Styling for the navbar
+*/
 
-ul {
+ul.nav-list {
     position: fixed;
     top: 0;
     width: 100%;
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;
+    background-color: bisque;
 }
 
-li {
+li.nav-list {
     display: inline;
-    border-right: 1px solid white;
+    float: right;
+}
+
+a.nav {
+    display: block;
+    padding: 12px 14px;
+    color: #443434;
+    text-align: center;
+    text-decoration: none;
+}
+
+li.home-icon {
+    display: inline;
     float: left;
 }
 
@@ -28,112 +43,86 @@ li.menu {
     display: none;
 }
 
-li:last-child {
-    border: none;
-}
-
-.Search {
-    float: right;
+li.menu div {
     display: block;
-    padding: 14px 16px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    background-color: #04a5aa;
+    padding: 12px 14px;
 }
 
-a {
-    display: block;
-    padding: 14px 16px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+.int:hover {
+    background-color: rgb(255, 209, 153);
 }
 
-li a:hover {
-    background-color: black;
+.int:active {
+    background-color: rgb(252, 234, 213);
 }
 
-li a:active {
-    background-color: #04a5aa;
-}
-
-.active {
-    background-color: #04a5aa;
-}
-
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-}
-
-li {
-    display: inline;
-    float: left;
-}
-
-li:last-child {
-    border-bottom: none;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #555;
-    color: white;
-}
-
-li a:active {
-    background-color: #04aa6d;
-    color: white;
-} */
+/*
+This section has stylying for the main body of the webpage
+*/
 
 main {
-    margin-top: 50px;
-    padding-left: 10%;
+    margin-top: 30px;
+    padding: 40px;
 }
 
 h1 {
-    margin: 10px;
-    margin-left: 0;
-    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
-p {
-    margin-top: 20px;
+h2 {
+    margin: 40px 0;
 }
+
+h3 {
+    margin: 20px 0;
+}
+
+p.note {
+    margin: 30px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+div#sidebar {
+    display: none;
+}
+
+/*
+Responsive section starts here.
+*/
 
 @media screen and (max-width: 480px) {
 
-    li {
-        display: none;
-        /* display: block;
-        float: none; */
+    li.home-icon {
+        display: block;
+        float: left;
     }
 
-    /* main {
-        margin-top: 170px;
-    } */
-
-    .Search {
-        display: block;
-        float: right;
+    li.nav-list {
+        display: none;
+        float: none;
     }
 
     li.menu {
         display: block;
-        border-right: 1px solid white;
-        float: left;
+        float: right;
+    }
+
+    div#sidebar {
+        display: none;
+        height: 100%;
+        width: 300px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: bisque;
+    }
+
+    i.nav {
+        display: block;
+        padding: 12px 14px;
+        text-align: center;
+        text-decoration: none;
     }
 }
