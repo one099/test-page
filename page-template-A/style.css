@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+div.nav-contain {
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
 div.nav {
     display: block;
     background-color: black;
@@ -16,7 +24,9 @@ a.nav {
     text-decoration: none;
     color: black;
     padding: 14px 14px;
+    min-width: 80px;
     border-bottom: 1px solid black;
+    text-align: center;
 }
 
 div.nav .int:hover {
