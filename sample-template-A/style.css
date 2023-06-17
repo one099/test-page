@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.nav {
+    display: block;
+    background-color: black;
+    padding: 10px;
+    overflow: visible;
+}
+
+a.nav {
+    float: right;
+    text-decoration: none;
+    color: black;
+    padding: 14px 14px;
+    border-bottom: 1px solid black;
+}
+
+div.nav .int:hover {
+    background-color: aqua;
+    border: 0;
+}
+
+div.nav .int:active {
+    background-color: powderblue;
+}
+
+
+main {
+    padding-top: 10px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+section {
+    padding: 40px 20px 0 20px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+p {
+    padding: 10px;
+}
+
+footer.footer {
+    background-color: black;
+    display: block;
+    color: white;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+div.left-foot, div.right-foot {
+    display: inline;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+div.right-foot:hover {
+    color: aqua;
+}
+
+a.foot {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a.foot:hover {
+    color: aqua;
+}
+
+a.foot:active {
+    color: powderblue;
+}
+
+div.left-foot {
+    float: left;
+}
+
+div.right-foot {
+    float: right;
+}
+
+div.right-foot button {
+    all: unset;
+}
