@@ -111,7 +111,7 @@ Responsive section starts here.
 
     div#sidebar {
         display: none;
-        height: 120%;
+        height: 100vh;
         width: 300px;
         position: fixed;
         right: 0;
