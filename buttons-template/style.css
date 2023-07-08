@@ -184,3 +184,29 @@ div.main {
     background-color: rgba(0, 0, 0, 0);
     transition: 0s;
 }
+
+/* Button 7 */
+
+.button-7 {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    padding: auto;
+    max-height: 50px;
+    padding: 14px;
+    width: 130px;
+    text-align: center;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+    box-shadow: 5px 5px 3px 0px gray;
+}
+
+.button-7:hover {
+    font-size: larger;
+}
+
+.button-7:active {
+    transform: translateX(5px) translateY(5px);
+    box-shadow: 0 0 0 0 gray;
+}
