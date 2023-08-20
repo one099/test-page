@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d7397b7673.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="main">
+        <h1>To-Do</h1>
+        <div class="task-form">
+            <form>
+                <input type="text" id="add-task">
+                <button id="task-submit" class="btn">Add Task</button>
+            </form>
+            <button class="clear" onclick="clr()">Clear All</button>
+        </div>
+        <div class="tasklist-cont">
+            <div class="tasks">
+                <ul id="task-list">
+                    <p id="no-task-placeholder">Nothing to do, add a task.</p>
+                    <!-- <li>
+                        <div class="task">
+                            <p>Task 1</p>
+                            <div class="buttons">
+                                <button class="done">Done</button>
+                                <button class="delete">Delete</button>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
