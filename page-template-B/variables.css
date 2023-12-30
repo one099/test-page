@@ -1,0 +1,15 @@
+html {
+    --bg: #31363b;
+    --bg-primary: #C7D1DB;
+    --bg-primary-contrast: #1D2125;
+    --text: #c7d1db;
+    --hyperlink: #78ffff;
+}
+
+html.dark {
+    --bg: #fff;
+    --bg-primary: #0f2142;
+    --bg-primary-contrast: #7989a5;
+    --text: #102a58;
+    --hyperlink: #ff0000;
+}
