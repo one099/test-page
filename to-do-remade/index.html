@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+
+  <body>
+    <main>
+      <h1>To-Do</h1>
+      <form class="add-task">
+        <input class="task-inp" type="text" />
+        <div class="taskmg">
+          <input type="submit" value="Add Item" class="task-btn" id="submit-btn">
+          <button class="task-btn" id="clear-btn">Clear All</button>
+        </div>
+      </form>
+      <div id="tasks">
+        <!-- This will be filled with tasks -->
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+
+</html>
