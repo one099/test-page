@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
     <head>
         <meta charset="UTF-8">
@@ -10,12 +10,29 @@
                 padding: 0;
                 box-sizing: border-box;
             }
+            
+            html {
+                --bg: #fff;
+                --bg-primary: #04a5aa;
+                --bg-primary-contrast: #7989a5;
+                --text: #fff;
+                --text-active: rgb(34, 34, 34);
+            }
+
+            html.dark {
+                --bg: #31363b;
+                --bg-primary: #7989a5;
+                --bg-primary-contrast: #909090;
+                --text: rgb(34, 34, 34);
+                --text-active: #fff;
+            }
 
             body {
                 display: block;
                 position: absolute;
                 height: 100%;
                 width: 100%;
+                background-color: var(--bg);
             }
 
             div {
@@ -31,22 +48,53 @@
                 padding: 14px 16px;
                 margin-bottom: 10px;
                 text-decoration: none;
-                color: white;
-                background-color: #04a5aa;
+                color: var(--text);
+                background-color: var(--bg-primary);
                 border: 1px solid black;
                 text-align: center;
                 border-radius: 25px 0 25px 0;
             }
 
             a:hover {
-                background-color: aquamarine;
-                color: rgb(34, 34, 34);
+                background-color: var(--bg-primary-contrast);
+                color: var(--text-active);
+            }
+
+            header {
+                background-color: var(--bg-primary);
+                border: solid black;
+                border-width: 0 0 2px 0;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+
+            #darkmode-toggle {
+                padding: 2px;
+                cursor: pointer;
+                background: var(--bg-primary);
+                border-radius: 50%;
+                color: black;
+                transition: all 0.2s ease;
+                border: 1px solid black;
+            }
+
+            #darkmode-toggle.active {
+                transform: rotate(180deg);
             }
         </style>
         <title>Test Page</title>
+        <script src="https://kit.fontawesome.com/d7397b7673.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
+        <header>
+            <div id="darkmode-toggle">
+                <i class="fa-solid fa-circle-half-stroke darkmode-btn"></i>
+            </div>
+        </header>
         <div>
             <p>
                 <a href="nav-bar-A/">Nav Bar Template - A</a>
@@ -58,6 +106,16 @@
                 <a href="to-do-remade/">To-Do Remade</a>
             </p>
         </div>
+
+        <script>
+            const darkmodeBtn = document.querySelector("#darkmode-toggle");
+            const rootElement = document.querySelector("html");
+
+            darkmodeBtn.addEventListener("click", () => {
+                darkmodeBtn.classList.toggle("active");
+                rootElement.classList.toggle("dark");
+            })
+        </script>
     </body>
 
 </html>
