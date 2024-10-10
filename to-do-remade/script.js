@@ -4,12 +4,7 @@ const clear_btn = document.getElementById("clear-btn");
 const task_cont = document.getElementById("tasks");
 const add_task = document.getElementsByClassName("add-task")[0];
 
-if (localStorage.getItem("taskList") === null){
-  let str = "[]" 
-  localStorage.setItem("taskList", str);
-} 
-
-let taskList = JSON.parse(localStorage.getItem("taskList"));
+let taskList = JSON.parse(localStorage.getItem("taskList")) || [];
 
 taskReload();
 
