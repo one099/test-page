@@ -136,7 +136,7 @@ function scoring() {
     let called = game_state.called[rnd][i];
     let scored = game_state.scored[rnd][i];
     
-    score.push( scored < called ? -called : scored === called ? called : scored - called > eoh ? -called : (called + Math.round((scored - called)/10)) )
+    score.push( scored < called ? -called : scored === called ? called : scored - called > eoh ? -called : (called + (scored - called)/10));
   }
 
   return score;
