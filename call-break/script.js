@@ -121,7 +121,7 @@ function displayTable(players, called, scored, score) {
   }
   
   for ( i = 0 ; i < 4 ; i++ ) {
-    tot += '<th>'+tot_score[i]+'</th>';
+    tot += '<th>'+Math.round(tot_score[i]*10)/10+'</th>';
   }
 
   return '<table><tr>'+plrs+'</tr>'+scores+'<tr>'+tot+'</tr></table>';
