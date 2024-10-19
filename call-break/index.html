@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test Page</title>
+  </head>
+  
+  <body>
+    <main>
+      
+      <div id="main-box">
+        
+        <div id="game-init">
+          <div id="new-game-setup">
+            <form method="POST" id="game-form">
+              <label>
+                Player 1:
+                <input type="text" name="player1" required>
+              </label>
+              <label>
+                Player 2:
+                <input type="text" name="player2" required>
+              </label>
+              <label>
+                Player 3:
+                <input type="text" name="player3" required>
+              </label>
+              <label>
+                Player 4:
+                <input type="text" name="player4" required>
+              </label>
+              <label>
+                Extra Hands: 
+                <input type="number" name="eoh" required>
+              </label>
+              <input type="submit" value="Start">
+            </form>
+          </div>
+        </div>
+        
+    
+        <div id="game">
+          <div id="game-disp">
+            
+          </div>
+          <div id="game-ctrl">
+            <div id="call-inp">
+              <input type="number" id="cp1" name="cp1">
+              <input type="number" id="cp2" name="cp2">
+              <input type="number" id="cp3" name="cp3">
+              <input type="number" id="cp4" name="cp4">
+              <button id="call-btn">Call</button>
+            </div>
+            <div id="scored-inp">
+              <input type="number" id="sp1" name="sp1">
+              <input type="number" id="sp2" name="sp2">
+              <input type="number" id="sp3" name="sp3">
+              <input type="number" id="sp4" name="sp4">
+              <button id="scored-btn">Scored</button>
+            </div>
+            <div id="clear-game">
+              <button id="clear-btn">Clear Game</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
