@@ -6,6 +6,8 @@ const game_main = document.getElementById('game');
 const call_btn = document.getElementById('call-btn');
 const scored_btn = document.getElementById('scored-btn');
 const clear_btn = document.getElementById('clear-btn');
+const call_inp = document.getElementById('call-inp');
+const scored_inp = document.getElementById('scored-inp');
 
 let game_state = JSON.parse(localStorage.getItem('game_state')) || {
   players: [],
@@ -32,7 +34,8 @@ game_form.addEventListener('submit', (event) => {
   game();
 });
 
-call_btn.addEventListener('click', () => {
+call_inp.addEventListener('submit', (event) => {
+  event.preventDefault();
   game_state.round_ongoing = true;
   const temp_data = [];
 
@@ -50,7 +53,8 @@ call_btn.addEventListener('click', () => {
   game_disp.innerHTML = displayTable(...Object.values(game_state));
 });
 
-scored_btn.addEventListener('click', () => {
+scored_inp.addEventListener('submit', (event) => {
+  event.preventDefault();
   game_state.round_ongoing = false;
 
   for(i = 1; i < 5 ; i++) {

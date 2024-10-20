@@ -46,20 +46,20 @@
             
           </div>
           <div id="game-ctrl">
-            <div id="call-inp">
-              <input type="number" id="cp1" name="cp1">
-              <input type="number" id="cp2" name="cp2">
-              <input type="number" id="cp3" name="cp3">
-              <input type="number" id="cp4" name="cp4">
-              <button id="call-btn">Call</button>
-            </div>
-            <div id="scored-inp">
-              <input type="number" id="sp1" name="sp1">
-              <input type="number" id="sp2" name="sp2">
-              <input type="number" id="sp3" name="sp3">
-              <input type="number" id="sp4" name="sp4">
-              <button id="scored-btn">Scored</button>
-            </div>
+            <form id="call-inp">
+              <input type="number" id="cp1" name="cp1" required>
+              <input type="number" id="cp2" name="cp2" required>
+              <input type="number" id="cp3" name="cp3" required>
+              <input type="number" id="cp4" name="cp4" required>
+              <input type="submit" id="call-btn" value="Call">
+            </form>
+            <form id="scored-inp">
+              <input type="number" id="sp1" name="sp1" required>
+              <input type="number" id="sp2" name="sp2" required>
+              <input type="number" id="sp3" name="sp3" required>
+              <input type="number" id="sp4" name="sp4" required>
+              <input type="submit" id="scored-btn" value="Scored">
+            </form>
             <div id="clear-game">
               <button id="clear-btn">Clear Game</button>
             </div>
