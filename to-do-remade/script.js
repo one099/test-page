@@ -37,7 +37,7 @@ function taskReload() {
     task_cont.removeChild(task_cont.firstChild);
   }
 
-  taskList = JSON.parse(localStorage.getItem("taskList"));
+  taskList = JSON.parse(localStorage.getItem("taskList")) || [];
   
   if (taskList.length > 0) {
     taskList.forEach((element) => {
